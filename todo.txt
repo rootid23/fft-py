@@ -1,0 +1,6 @@
+- Docker add
+- Use pyCharm
+- Setup w/ pip/layout/
+- Upgrade to python3.0
+- Use the interactive editior like docker w/ crnl
+- Use YAPF for formatting
