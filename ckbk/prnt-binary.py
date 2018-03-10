@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
+
 def print_bin(n):
   if (n >= 1):
-    last = n%2
-    print_bin(n/2)
+    last = n % 2
+    print_bin(n / 2)
     print last,
 
 

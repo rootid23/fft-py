@@ -1,11 +1,12 @@
-
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
+
   def oddEvenList(self, head):
     """
     :type head: ListNode
@@ -17,12 +18,12 @@ class Solution(object):
     tmpDmyo = dmyNdo
     idx = 0
     while head is not None:
-      if(idx%2 == 0) :
-          tmpDmyE.next = head
-          tmpDmyE = tmpDmyE.next
-      else :
-          tmpDmyo.next = head
-          tmpDmyo = tmpDmyo.next
+      if (idx % 2 == 0):
+        tmpDmyE.next = head
+        tmpDmyE = tmpDmyE.next
+      else:
+        tmpDmyo.next = head
+        tmpDmyo = tmpDmyo.next
       head = head.next
       idx += 1
     tmpDmyo.next = None

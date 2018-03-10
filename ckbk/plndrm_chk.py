@@ -4,6 +4,7 @@
 
 import unittest
 
+
 class Solution(object):
 
   def is_palindrome(self, s):
@@ -22,6 +23,7 @@ class Test(unittest.TestCase):
     self.assertEqual(s.is_palindrome("aa"), True)
     self.assertEqual(s.is_palindrome("ab"), False)
     self.assertEqual(s.is_palindrome("abc"), False)
+
 
 if __name__ == '__main__':
   unittest.main()

@@ -9,6 +9,10 @@ nnoremap <silent> ,aml :call AppendModeline()<CR>
 "Replace comment
 nmap ,rmc :%s/\/\//#/g<CR>
 
+"Remove all vowels in the line
+"W/ vimscript - echo substitute(split(line)[0],'[aeiou]','','g')
+nmap ,rvw :s/[aeiou]//g<CR>
+
 "Go to end of file and add python main
 nnoremap ,mn <ESC>GA<CR><ESC>:.-1read tmpl/.main.tmpl<CR>I<BS><ESC>j0i<BS><ESC>l
 

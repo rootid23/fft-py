@@ -27,6 +27,7 @@ class Solution(object):
       lvl += 1
     return lvl
 
+
 # DFS
 #TC : O(n)
 #Minimize the height when leaf node found

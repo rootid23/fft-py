@@ -8,6 +8,7 @@ import unittest
 #Fib - O(1.6180)^n -> O(n) -> O(log n)
 #F = F(n-1) + F(n-2)
 
+
 class Fibo(object):
 
   mem = {}
@@ -20,27 +21,26 @@ class Fibo(object):
       return self.mem[n]
     if n <= 1:
       f = n
-    else :
-      f = self.fib(n-1) + self.fib(n-2)
+    else:
+      f = self.fib(n - 1) + self.fib(n - 2)
     self.mem[n] = f
     return self.mem[n]
 
   #Bup - save space + Topo ordered
   #TC - O(n)
   def fibBup(self, n):
-    mema = [0,1]
-    for k in range(2, n+1):
-      mema.append(mema[k-1] + mema[k-2])
+    mema = [0, 1]
+    for k in range(2, n + 1):
+      mema.append(mema[k - 1] + mema[k - 2])
     return mema[n]
 
   #Rec - O(1.6180)^n
   def fibRec(self, n):
     if n <= 1:
       f = n
-    else :
-      f = self.fibRec(n-1) + self.fibRec(n-2)
+    else:
+      f = self.fibRec(n - 1) + self.fibRec(n - 2)
     return f
-
 
 
 class Test(unittest.TestCase):
@@ -76,9 +76,7 @@ class Test(unittest.TestCase):
     self.assertEqual(s.fibRec(6), 8)
 
 
-
 if __name__ == '__main__':
   unittest.main()
-
 
 # vim: ai ts=2 sts=2 et sw=2 tw=100 fdm=indent fdl=1

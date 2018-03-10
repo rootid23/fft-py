@@ -4,6 +4,7 @@
 #Note:
 #You may assume that all inputs are consist of lowercase letters a-z.
 
+
 # W/ child as a array
 class TrieNode(object):
 
@@ -68,7 +69,6 @@ class Trie(object):
     return True
 
 
-
 ## Python W/ childs as dictionary
 class TrieNode:
   # Initialize your data structure here.
@@ -116,12 +116,12 @@ class Trie:
       node = node.children[i]
     return True
 
+
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
 # obj.insert(word)
 # param_2 = obj.search(word)
 # param_3 = obj.startsWith(prefix)
-
 
 if __name__ == "__main__":
   main()

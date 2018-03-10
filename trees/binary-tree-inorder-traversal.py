@@ -3,23 +3,28 @@
 from TreeNode import TreeNode
 import unittest
 
+
 class Solution(object):
-  def __init__ (self):
+
+  def __init__(self):
     self.lst = []
 
   """
     :type root: TreeNode
     :rtype: List[int]
   """
+
   def inorderTraversal(self, root):
-    if not root :
+    if not root:
       return self.lst
     self.lst = self.inorderTraversal(root.left)
     self.lst.append(root.val)
     self.lst = self.inorderTraversal(root.right)
     return self.lst
 
+
 class Test(unittest.TestCase):
+
   def test_str_pal(self):
     s = Solution()
     t = TreeNode(10)
@@ -27,7 +32,8 @@ class Test(unittest.TestCase):
     t.right = TreeNode(19)
     print t
     self.assertEqual(s.inorderTraversal(None), [])
-    self.assertEqual(s.inorderTraversal(t), [12,10,19])
+    self.assertEqual(s.inorderTraversal(t), [12, 10, 19])
+
 
 if __name__ == '__main__':
   unittest.main()

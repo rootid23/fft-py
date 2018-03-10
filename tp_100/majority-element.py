@@ -6,6 +6,7 @@ import unittest
 #the element that appears more than ⌊ n/2 ⌋ times.  You may assume that the
 #array is non-empty and the majority element always exist in the array.
 
+
 #cnstrnt :
 #1. array is nonempty
 #2. all ints
@@ -37,7 +38,7 @@ class Solution(object):
 
     return candidate
 
+
 def test_answer():
   sol = Solution()
-  assert majorityElement([1,3,5,5,5,5]) == 5
-
+  assert majorityElement([1, 3, 5, 5, 5, 5]) == 5
