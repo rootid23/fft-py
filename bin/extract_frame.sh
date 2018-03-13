@@ -8,7 +8,7 @@ T_END=${FROM}
 FNAME=$HOME/coursera/algs4partII-007/01_Week_0-__Welcome_to_Algorithms_Part_II/01_Course_Introduction_9-22.mp4
 
 # Per min
-time ffmpeg -i $FNAME  -filter:v fps=fps=1/60 $PWD/ffmpeg_%0d.png
+time ffmpeg -i $FNAME -filter:v fps=fps=1/60 $PWD/ffmpeg_%0d.png
 
 # Per sec
 #time ffmpeg -i $FNAME  -filter:v fps=fps=30 $PWD/ffmpeg_%0d.png
