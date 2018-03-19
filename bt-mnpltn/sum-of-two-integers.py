@@ -5,6 +5,7 @@
 #Example:
 #Given a = 1 and b = 2, return 3.
 
+
 class Solution:
 
   # bit operation

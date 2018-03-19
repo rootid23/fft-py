@@ -14,7 +14,9 @@ nmap ,rmc :%s/\/\//#/g<CR>
 nmap ,rvw :s/[aeiou]//g<CR>
 
 "Replace comment
-nmp ,rc %s/\/\//#/g<CR>
+nmap ,rc :%s/\/\//#/g<CR>
+
+nmap ,cc :colorscheme mac_classic<CR>
 
 "Go to end of file and add python main
 nnoremap ,mn <ESC>GA<CR><ESC>:.-1read tmpl/.main.tmpl<CR>I<BS><ESC>j0i<BS><ESC>l
