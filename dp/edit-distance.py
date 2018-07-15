@@ -9,7 +9,22 @@
 # It works with suffix of both strings
 # 3 sub problem
 
+#Recursion
+def minDistance(self, word1, word2):
+  #subproblmes
+  m, n = map(len, [word1, word2])
 
+  if(m == 0 or n == 0) : return m + n
+
+  if(word1[-1] == word2[-1]) :
+      return  self.minDistance(word1[0:m-1], word2[0:n-1])
+  else :
+      return min(self.minDistance(word1[0:m-1], word2),
+                 self.minDistance(word1, word2[0:n-1]),
+                 self.minDistance(word1[0:m-1], word2[0:n-1]))  + 1
+
+
+#Reursion w/ memo dict
 def minDistance(self, word1, word2, memo={}):
   m, n = map(len, [word1, word2])
   if (m == 0 or n == 0):
@@ -23,7 +38,35 @@ def minDistance(self, word1, word2, memo={}):
       self.minDistance(word1, word2[1:], memo) + 1)
   return memo[word1, word2]
 
+#Iteration w/ indexing
+class Solution(object):
+    def minDistance(self, word1, word2):
+        """
+        :type word1: str
+        :type word2: str
+        :rtype: int
+        """
+        #subproblem
+        def minDistHelper(word1, word2, idxDict={}) :
+            m, n = map(len, [word1, word2])
+            # print( " ( m = %d, n = %d)" %(m,n) )
 
+            if(m == 0 or n == 0) : return m + n
+            cost = 0
+            if( (m,n) in idxDict ) : return idxDict[ (m,n) ]
+            if(word1[-1] == word2[-1]) :
+                cost = minDistHelper(word1[0:m-1], word2[0:n-1], idxDict)
+            else :
+                cost = min(minDistHelper(word1[0:m-1], word2, idxDict),
+                           minDistHelper(word1, word2[0:n-1], idxDict),
+                        minDistHelper(word1[0:m-1], word2[0:n-1], idxDict))  + 1
+            idxDict[ (m,n) ] = cost
+            return idxDict[ (m,n) ]
+
+        return minDistHelper (word1, word2)
+
+
+#Iteration w/ array
 class Solution(object):
 
   def minDistance(self, word1, word2):

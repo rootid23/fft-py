@@ -11,6 +11,7 @@
 # TC : O(n)
 class Solution(object):
 
+  #Iteration with trick
   def moveZeroes(self, nums):
     strt = 0
     for i in range(len(nums)):
@@ -28,3 +29,4 @@ class Solution(object):
       except:
         nums += [0] * c
         break
+

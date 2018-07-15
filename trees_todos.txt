@@ -1,0 +1,9 @@
+##TODOS 1. BAST reange, delete , kth smallest,larget , mode, recursion with pdf -> mirrorr,
+#symmetrix, and double tree
+#https:#leetcode.com/discuss/45386/4-lines-c-java-python-ruby
+
+#Must know
+#1. Binary vs N-array tree
+#2. Complete bin tree -> All non leaf elements have 2 children,
+#child started to add from left of tree
+

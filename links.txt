@@ -1,0 +1,9 @@
+
+https://www.codingblocks.net/
+
+-- DS
+https://sp18.datastructur.es/ (Java DS + higher order function)
+http://thomas-cokelaer.info/tutorials/python/frozensets.html (Python DS)
+
+-- DS Visualization
+https://www.cs.usfca.edu/~galles/visualization/Heap.html

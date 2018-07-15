@@ -1,0 +1,2 @@
+-- N+1 problem
+https://dzone.com/articles/how-identify-and-resilve-n1

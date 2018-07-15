@@ -1,0 +1,148 @@
+##
+## complexity - https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
+## BB
+## python ternary operator
+    return root if left and right else left or right
+
+## python string operation
+str()  - str(1) => '1'
+upper() - 'ancd'.upper()
+lower() - 'ABCD'.lower()
+count() - 'abcc',count('c')
+find() -  'on sat morning'.find("o")
+replace() - 'active voice'.replace('active', 'passive')
+len() - len('abcde')
+
+
+# Python bag/mutltiset
+  - cntr = collections.Counter(obj)
+  - sum(cntr.values())
+
+## import re
+  - use of r - Do not
+  -  Diff between match (only check the matching from start)  and search (search in all string)
+  - re.match(pat, text) -
+  - re.sub(pattern, repl, str) -
+    eg. re.sub(r'[A-Z]', '', 'AbcedEfrt') - Replace all capital letters with ''
+  - re.split(pattern, str) -
+    eg. re.split(r'[A-Z]', 'AbcdEfrg') split using delimiter as Uppercase letter
+  - match.group() - return matched groups
+
+
+#Remove a, an and the , and, is, was ,were and then count
+collections.Counter(filter(lambda x: x not in ['a','an', 'the'], st.split()))
+
+
+## deep copy list
+self.nums = oldNums[:]
+
+## random number generator
+import random
+random.randrange(0, i+1)
+
+## __name__ with special value __main__
+  if __name__ == "__main__": pass
+
+## Sort is not in-place
+sortedCntrItems = sorted(cntr.items(), key=lambda pair: pair[1], reverse=True)
+
+## List - (start, stop, step)
+https://docs.python.org/2.3/whatsnew/section-slices.html
+-- Init list
+  L = range(10)
+-- Reverse the list
+  L[::-1]
+-- L[1:10:2], L[:-1:1], L[::-1]
+-- Shallow v/s Deep copy
+  L = L1[:] Deep copy
+  L = L1 Shallow copy
+-- Check if L is instance of list
+  if(isinstance(L, list))
+
+
+## n-d array initialization
+1. ndArray = [[[0 for _ in range(n)] for _ in range(n) ] for _ in range(n)]
+-- DO NOT USE THIS \/
+2. ndArray = [[[0]*n]*n]*n ## Tricky but wrong way to create array XXXXXX
+
+## Zip operator
+eg w/ 2 d array pick y column from start row
+zip(*t[::1])
+
+eg w/ 2 d array pick y column from end row
+zip(*t[::-1])
+
+
+#To preety print array
+import pprint
+pprint.print()
+
+# Variable scope python
+  - global (outside def-> inside read only)  v/s local (inside def)
+
+#from collections import OrderedDict
+- OrderedDict(), popitem(last=False) - remove first (k,v) , pop(key) - remove key
+
+# Skip (key not dict_type) check
+collections.defaultdict(list) vs {}
+
+## file I/O and handle exception w/ try , except
+  - open(), fd.close(),
+  - readline() vs read()
+
+## Use PEP8 style while coding
+  - https://www.python.org/dev/peps/pep-0008/#programming-recommendations
+
+## python find help
+  - dir(collections.deque) - return all apis in collection.deque
+  - help(re) - describes api and functionality
+  - https://docs.python.org/2.7/whatsnew/ - Check whats new in python
+
+## Python numbers
+https://en.wikiversity.org/wiki/Python_Concepts/Numbers#Non-decimal_Integers - (isinstanceof (val, type), int,bin,octal,hex,real_no/float - on cont. line)
+
+## Python improve skills
+  - https://checkio.org/
+  - http://docs.python-guide.org/en/latest/writing/gotchas/
+  - https://github.com/brennerm/PyTricks
+
+## def, class, module, local, global
+   top-down evaluation
+
+### Decorators? Iterators? Generators?
+
+# yield v/s return
+
+# Generators v/s iterators
+
+#Path compression
+https://www.cs.princeton.edu/courses/archive/spring13/cos423/lectures/UnionFind.pdf
+
+## https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
+#LBYP :
+#Look before you leap. This coding style explicitly tests for pre-conditions before making calls or lookups. This style contrasts with the EAFP approach and is characterized by the presence of many if statements.
+#https://docs.python.org/3/glossary.html#term-lbyl
+if "key" in my_dict:
+    x = my_dict["key"]
+	else:
+	    # handle missing key
+#EAFP
+#Easier to ask for forgiveness than permission
+#https://docs.python.org/3/glossary.html#term-eafp
+try:
+    x = my_dict["key"]
+	except KeyError:
+	    # handle missing key
+
+#heap
+# import heapq
+# h = []
+#heappush (h, () ) , heappop(h) - Returns the minimum element from the heap
+#h = []
+#heapq.heappush(h, (4,0))
+print ( heapq.heappop(h) )^i#
+
+-- Links
+https://markfontenot.net/2017/12/09/spring-2018-data-structures-prep/
+https://sp18.datastructur.es/  (CS61b berkley)
+

@@ -1,0 +1,144 @@
+-- Create schema before interview
+-- Identify your one liner (eg. SMOOTH, BELIEVE)
+
+-- Coding
+  1. Listen + Ask questions + Identify constraints (Decide Algo/DS)
+  2. Draw example - Specific + General (Not a special case)
+  3. Brute force
+  4. Optimize
+  5. Walk through pseudocode
+  6. Implement - Modularity, Error checks, Good variables + Function names + class names and usage + BUD
+  7. Test - Small test cases, Special test case
+
+-- 5 Ways (strategy Vs tactics)
+  1. BUD - Bottleneck, Unnecssary work, Duplicated work
+  2. DIY - Do It Yourself - Examplify eg
+  2. Pattern Matching ex - Find the minimum element in an unsorted array.
+  3. Simplify and Generalize  ex- A ransom note can be formed by cutting words out of a magazine to form a new sentence. How would you figure out if a ransom note (string) can be formed from a given magazine (string)?
+    Xploit input using constraints
+  4. Base Case and Build ex - print all permutations of a string
+  5. Data Structure Brainstorm ex - Numbers are randomly generated and stored into an (expanding) array. How would you keep track of the median?
+    eg. Array, Linked list, Heap
+
+-- OOD
+  -- CRC, SOLID, DRY
+  1. What are your goals?
+  2. What are your core-objects? Nouns
+  3. How do the objects relate to each other? Verbs
+  4. How do the interact with each other?
+  5. Are there any tricky algorithm?
+
+-- System design/ Scalability
+  - DS # of msgs
+--  Concurrency
+-- Provisioning - Docker, VGrant
+
+-- Know the flash card from prog pearls
+
+String matching - substring (Naive, KMP -DFA, BM - RT t0 lt ) , regex _ NFA ( solve expon states, eplsilon)
+Sorting - Merge, Quick , Radix - Billion number sort
+Compression - Static, dynamic,Adpative
+Graph- undirected, directed, edge-weighted directed, min spanning tree , shortest path, toplogical sort, DFS, BFS
+Trees - BT, BST - opertn delete - tombstone, -
+- Balanced BSTs
+Hash - Horner's rule to compute the hash
+PQ - diffrent impl ( Array, LL, DLL , Sorted array, Heap)
+Stk - diffrent impl (
+Q - diffrent impl (
+UF - Quick UF, Quick Union, Weighted QU, Path compression
+Reduction - Solve X to solve Y
+- Fat interface, memory modelling
+
+- MIT
+- DFS, BFS ,
+- DP - 5 step apprach
+- Greedy ?
+- Convex hull ?
+- D&C ?
+
+- 106B
+- Backtracking - choose , Xplore, Unchoose
+- Template,
+
+
+Graph
+String matching
+
+
+--- Exception J8
+IllegalArgumentException: Non-null parameter value is inappropriate.
+IllegalStateException: Object state is inappropriate for method invocation. For example, this would be the exception to throw if the caller attempted to use some object before it has been properly initialized.
+NullPointerException: Parameter value is null where prohibited.
+IndexOutOfBoundsException: Index parameter value is out of range.
+ConcurrentModificationException: Concurrent modification of an object has been detected where it is prohibited.
+UnsupportedOperationException: Object does not support method.
+
+
+1) Algorithm Complexity (know Big­O):
+3) System Design -
+4) Sorting - When 2 use quick vs merge sort , exploit input
+5) Hash tables
+6) Trees - construction, traversal, manipulation, n-ary tree, trie
+bst, balanced bst RBL, splay, AVL, DFS, bfs , pre vs in vs post order
+7) Graphs: 3 basic ways to represent a graph in memory (objects and pointers, matrix, and adjacency list);
+a. Familiarize yourself with each representation and its pros & cons.
+b. You should know the basic graph traversal algorithms: breadth­first search and depth­first search. Know their computational complexity, their tradeoffs, and how to implement them in real code.
+8) Other data structures:
+Famous classes of NP­complete problems, such as traveling salesman and
+the knapsack problem, and be able to recognize them when an interviewer asks you them in disguise. Find out what NP­complete means.
+9) Discrete Mathematics 101 -
+
+System Design
+Sample topics: features sets, interfaces, class hierarchies, designing a system under certain constraints, simplicity and robustness, tradeoffs.
+Open­Ended Discussion
+Sample topics: biggest challenges faced, best/worst designs seen, performance analysis and optimization, testing, ideas for improving existing products.
+
+https://research.google.com/pubs/DistributedSystemsandParallelComputing.html
+
+
+--
+https://engineering.paypalcorp.com/answerhub/questions/383940/javalangnosuchmethoderror-sunsecurityprovidercertp.html
+https://github.com/shubh3110/competitive-programming-resources
+https://app.codility.com/programmers/accounts/register/
+https://www.codewars.com/
+
+
+
+https://github.com/shashank88/system_design#designques
+
+#### Daily visit
+http://blog.gainlo.co/?utm_source=Gainlo&utm_medium=button-hl&utm_campaign=Gainlo
+https://www.educative.io/collection/5642554087309312/5679846214598656
+https://www.hiredintech.com/app
+https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8
+
+https://www.codewars.com/
+
+4,2,7,2,3,5
+
+
+    Topcoder - Div 2 250 = CodeForces - Div 2 A, B = Codechef - Beginner, Easy. (Respectively)
+    Topcoder - Div 2 500 = CodeForces - Div 2 C = Codechef - Medium.
+    Topcoder - Div 1 250 = CodeForces - Div 1 A = Codechef - Medium.
+
+        Interview Bit - InterviewBit Courses - InterviewBit
+    Leet Code - LeetCode Online Judge
+    Career Cup - Programming Interview Questions | CareerCup
+    Geeks For Geeks - GeeksforGeeks | A computer science portal for geeks
+    Hacker Rank - HackerRank
+    Hacker Earth - HackerEarth - Programming challenges and Developer job
+
+
+
+https://github.com/rishab1065/interview/wiki/Dynamic-Programming
+
+--  Pre
+http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html
+https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions
+https://community.topcoder.com/tc?module=ProblemArchive
+
+Code Complete: A Practical Handbook of Software Construction
+Clean Code: A Handbook of Agile Software Craftsmanship
+The Practice of Programming
+Design Patterns: Elements of Reusable Object Oriented Software
+Effective Java

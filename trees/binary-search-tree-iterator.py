@@ -29,7 +29,6 @@ class BSTIterator(object):
       self.stk.append(root)
       self.pushLeft(root.left)
 
-
 # Your BSTIterator will be called like this:
 # i, v = BSTIterator(root), []
 # while i.hasNext(): v.append(i.next())

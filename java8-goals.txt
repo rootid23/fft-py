@@ -1,0 +1,83 @@
+
+Chapter 1: Java 8: why should you care?
+Chapter 2: Passing code with behavior parameterization
+Chapter 3: Lambda expressions
+Chapter 4: Working with Streams
+Chapter 5: Processing data with streams
+Chapter 6: Collecting data with streams
+Chapter 7: Parallel data processing and performance
+Chapter 8: Refactoring, testing, debugging
+Chapter 9: Default methods
+Chapter 10: Using Optional as a better alternative to null
+Chapter 11: CompletableFuture: composable asynchronous programming
+Chapter 12: New Date and Time API
+Chapter 13: Thinking functionally
+Chapter 14: Functional programming techniques
+Chapter 15: Blending OOP and FP: comparing Java 8 and Scala
+Chapter 16: Conclusions and "where next" for Java
+Appendix A: Miscellaneous language updates
+Appendix B: Miscellaneous library updates
+Appendix C: Performing multiple operations in parallel on a Stream
+Appendix D: Lambdas and JVM bytecode We will update the repository as we update the book. Stay tuned!
+
+
+Impatient
+
+Lambda Expressions
+1.1 Why Lambdas? — page 2
+1.2 The Syntax of Lambda Expressions — page 4 1.3 Functional Interfaces — page 6
+1.4 Method References — page 8
+1.5 Constructor References — page 9
+1.6 Variable Scope — page 10
+1.7 Default Methods — page 14
+1.8 Static Methods in Interfaces — page 16 Exercises — page 18
+
+    The Stream API
+
+2.1 From Iteration to Stream Operations — page 22
+2.2 Stream Creation — page 24
+2.3 The filter, map, and flatMap Methods — page 25
+2.4 Extracting Substreams and Combining Streams — page 26 2.5 Stateful Transformations — page 27
+2.6 Simple Reductions — page 28
+2.7 The Optional Type — page 29
+2.8 Reduction Operations — page 31
+2.9 Collecting Results — page 33
+2.10 Collecting into Maps — page 34
+2.11 Grouping and Partitioning — page 36 2.12 Primitive Type Streams — page 39 2.13 Parallel Streams — page 40
+2.14 Functional Interfaces — page 42
+
+    Programming with Lambdas
+  3.1 Deferred Execution — page 48
+3.2 Parameters of Lambda Expressions — page 49 3.3 Choosing a Functional Interface — page 50 3.4 Returning Functions — page 53
+3.5 Composition — page 54
+3.6 Laziness — page 56
+3.7 Parallelizing Operations — page 57
+3.8 Dealing with Exceptions — page 58
+3.9 Lambdas and Generics — page 61
+3.10 Monadic Operations — page 63
+
+    JavaFX XXX
+    The New Date and Time API
+    Concurrency Enhancements
+6.1 Atomic Values — page 120
+6.2 ConcurrentHashMap Improvements — page 123 6.3 Parallel Array Operations — page 128
+6.4 Completable Futures — page 130
+Exercises — page 134
+
+    The Nashorn JavaScript Engine XX
+    Miscellaneous Goodies
+
+8.1 Strings — page 158
+8.2 Number Classes — page 158
+8.3 New Mathematical Functions — page 159 8.4 Collections — page 160
+8.5 Working with Files — page 163
+8.6 Annotations — page 167
+8.7 Miscellaneous Minor Changes — page 171
+
+Java 7 Features That You May Have Missed
+9.1 Exception Handling Changes — page 180
+9.2 Working with Files — page 183
+9.3 Implementing the equals, hashCode, and compareTo Methods — page 188 9.4 Security Requirements — page 190
+9.5 Miscellaneous Changes — page 193
+Exercises — page 196
+
