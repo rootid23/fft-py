@@ -15,7 +15,7 @@ class Solution:
         #contrst -
         # 1. how long ? what char -set?
         #daaadb, aa (i, i+1) - for even
-        #daba -> aba (i - skip) - for odd
+        #daba -> aba (i, i) - for odd
 
         def expand(start, end) :
             m = len(s)
@@ -39,7 +39,6 @@ class Solution:
                 maxstr = e
             if(ol > max(el, ml)) :
                 maxstr = o
-
 
         return maxstr
 

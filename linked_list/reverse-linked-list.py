@@ -18,7 +18,7 @@ class Solution(object):
     return nxtHead
 
 
-#Recusrsive
+#Recursive
 #n1 → … → nk-1 → nk → nk+1 ← … ← nm
 #1. nk+1 shud point to nk i.e. nk.next.next = nk
 #2. nk.next = null

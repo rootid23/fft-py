@@ -30,6 +30,35 @@
 #
 import collections
 
+class Solution(object):
+    def isBipartite(self, graph):
+        #graph is bipartite iff can be colored with 2
+
+        color_dict = [-1] * len(graph)
+        visited = set()
+
+        def isbpt(node, color) :
+
+            #Already colored with different color
+            if(color_dict[node] != -1 and color != color_dict[node]) :
+                return False
+
+            #Already colored with same color
+            if(color_dict[node] != -1 and color == color_dict[node]) :
+                return True
+
+            color_dict[node] = color
+
+            for nbr in graph[node] :
+                if(isbpt(nbr, 1-color) == False) :
+                    return False
+            return True
+
+        #Ihis graph might be a disconnected graph. So check each unvisited node.
+        for i in range(len(graph)):
+            if(color_dict[i] == -1 and isbpt(i, 1) == False) :
+                return False
+        return True
 
 class Solution(object):
 

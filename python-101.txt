@@ -28,6 +28,9 @@ len() - len('abcde')
     eg. re.split(r'[A-Z]', 'AbcdEfrg') split using delimiter as Uppercase letter
   - match.group() - return matched groups
 
+##
+- MAX - float('inf')
+- MIN - float('-inf')
 
 #Remove a, an and the , and, is, was ,were and then count
 collections.Counter(filter(lambda x: x not in ['a','an', 'the'], st.split()))
@@ -43,7 +46,8 @@ random.randrange(0, i+1)
 ## __name__ with special value __main__
   if __name__ == "__main__": pass
 
-## Sort is not in-place
+## Sorted vs sort - not in place v/s in place
+## Sorted is not in-place
 sortedCntrItems = sorted(cntr.items(), key=lambda pair: pair[1], reverse=True)
 
 ## List - (start, stop, step)
