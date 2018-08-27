@@ -44,7 +44,7 @@ def build_trie(input_lst) :
 
 def query_urls(trie, query_list) :
     rst = []
-    for idx in range( len(query_list)) :
+    for idx in range(len(query_list)) :
        qry = query_list[idx]
        rst += [ get_matching_url(trie, qry)]
     return rst

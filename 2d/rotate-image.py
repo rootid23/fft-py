@@ -10,7 +10,7 @@ class Solution(object):
 
         # assert(m == n, "")
 
-        #HT Swap
+        #HT Swap (row swap)
         for i in range(m//2) :
             matrix[i], matrix[n-i-1] = matrix[n-i-1], matrix[i]
 

@@ -38,10 +38,10 @@ class Solution(object):
         if(not ltsign) : return rtsign #if rtsign is above ltsign
         return ltsign
 
-#Iterative
+#Iterative (This scheme is used in the detecting the cycle)
 def lowestCommonAncestor(self, root, p, q):
     stack = [root]
-    parent = {root: None}
+    parent = {root: None} #DFS
     while p not in parent or q not in parent:
         node = stack.pop()
         if node.left:
@@ -57,4 +57,34 @@ def lowestCommonAncestor(self, root, p, q):
     while q not in ancestors:
         q = parent[q]
     return q
+
+#Iterative
+def lowestCommonAncestor(self, root, p, q):
+
+  def path_to_node(root, t) :
+
+      if(not root) : return root
+      if(root == t) :
+          return [ root ]
+      lt = path_to_node(root.left, t)
+      rt = path_to_node(root.right ,t)
+      if(lt) :
+          lt += [ root ]
+          return lt
+      if(rt) :
+          rt += [ root ]
+          return rt
+      return None
+
+  ps = path_to_node(root,p)
+  qs = path_to_node(root,q)
+  lca = None
+  while(ps and qs) :
+      t = ps.pop()
+      t1 = qs.pop()
+      print(t.val ,t1.val)
+      if(t == t1) :
+          lca = t
+
+  return lca
 
