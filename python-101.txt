@@ -150,3 +150,10 @@ print ( heapq.heappop(h) )^i#
 https://markfontenot.net/2017/12/09/spring-2018-data-structures-prep/
 https://sp18.datastructur.es/  (CS61b berkley)
 
+-- Python re detect floating point number
+s =  "-1e-5"
+s = "1.45"
+s = ".56e+4"
+s =  "-1e+5"
+print(re.match( r"^([+|-]?\d*\.?\d+)([eE]([+-]?\d+))?$", s) )
+

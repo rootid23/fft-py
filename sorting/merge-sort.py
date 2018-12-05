@@ -22,4 +22,3 @@ def merge(a, b) :
 assert merge_sort([10,2,5,3,7]) == sorted([10,2,5,3,7])
 assert merge_sort([10,1]) == sorted([10,1])
 assert merge_sort([10,1,-10]) == sorted([10,1,-10])
-

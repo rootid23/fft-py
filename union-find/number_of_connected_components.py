@@ -26,7 +26,6 @@
 #1.
 #frm  - 1
 
-
 # Quick-find
 def countComponents(n, edges):
 

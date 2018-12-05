@@ -1,0 +1,8 @@
+
+snippet sleep "try sleep catch" b
+try {
+	Thread.sleep(${1:1000});
+} catch (InterruptedException e){
+	e.printStackTrace();
+}
+endsnippet

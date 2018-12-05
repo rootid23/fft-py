@@ -41,3 +41,30 @@ class Solution(object):
     cSumHelper()
     return rst
 
+
+class Solution(object):
+    def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+
+        def csHelper(cs, sc, target, last_decision =0) :
+            rst = []
+            if(sc and target == 0) :
+                #print(sc)
+                rst += [ sc[:] ]
+            for i in range(last_decision, len(cs)) :
+                if(target >= cs[i]) :
+                    sc += [ cs[i] ]
+                    #print(sc)
+                    rst += csHelper(cs, sc, target - cs[i], i)
+                    sc.pop()
+            return rst
+
+        #repeat the elment
+        candidates.sort()
+
+        return csHelper(candidates, [] , target)
+

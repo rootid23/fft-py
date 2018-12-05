@@ -41,6 +41,7 @@ def isValidSerialization(self, preorder):
         stack.append(node)
     return stack == ["#"]
 
+
 #public boolean isValidSerialization(String preorder) {
 #  if (preorder == null) return false;
 #  Stack<String> st = new Stack<>();
@@ -58,7 +59,6 @@ def isValidSerialization(self, preorder):
 #  }
 #  return st.size() == 1 && st.peek().equals("#");
 #}
-
 
 
 #This is very simple problem if you use stacks. The key here is, when you see two consecutive "#"
