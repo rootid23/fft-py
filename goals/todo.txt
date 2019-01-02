@@ -1,0 +1,27 @@
+-- heapq w/ multiple keys - store the emelaments w/ increasing value for same value use the index as a secondary key?
+
+https://softwareengineering.stackexchange.com/questions/254947/difference-between-a-heap-and-a-priority-queue
+https://leetcode.com/problems/maximum-width-ramp/submissions/
+https://leetcode.com/problems/maximum-width-ramp/discuss/208379/100-faster-Python-O(n)-solution-with-detailed-explanation
+Go over heap and sorting
+
+--  CTCI
+  - medium
+  - hard
+--  EPI
+--  OOD
+--  System design
+    - Speak + explain 2 mins
+    - Speak 10 mins
+    - Speak 30 mins
+
+--  Behaviroal
+    - Note down  (STAR)
+      - Challenging - S - Bug, duplicate entry cmps db
+
+-- 10X (Setup assmbely line for mass production)
+
+-- Adhoc
+
+
+

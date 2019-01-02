@@ -1,4 +1,58 @@
 
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        self.ans = 0
+
+        def depth(p):
+            if not p: return 0
+            left, right = depth(p.left), depth(p.right)
+            self.ans = max(self.ans, left+right)
+            return 1 + max(left, right)
+
+        depth(root)
+        return self.ans
+
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
+        self.ans = 1
+        def depth(node):
+            if not node: return 0
+            L = depth(node.left)
+            R = depth(node.right)
+            self.ans = max(self.ans, L+R+1)
+            return max(L, R) + 1
+
+        depth(root)
+        return self.ans - 1
+
+# w/ stack - iterative solution
+      def diameterOfBinaryTree(self, root):
+        if not root: return 0
+        d = {None: -1}
+        s = [root]
+        ans = 0
+        while s:
+            node = s[-1]
+            print(node)
+            print(d)
+            if node.left in d and node.right in d:
+                print(d)
+                s.pop()
+                l = d[node.left] + 1
+                r = d[node.right] + 1
+                ans = max(ans, l + r)
+                d[node] = max(l, r)
+            else:
+                if node.left:
+                    s.append(node.left)
+                if node.right:
+                    s.append(node.right)
+        return ans
+
 #Diameter of Binary Tree
 #Given a binary tree, you need to compute the length of the diameter of the
 #tree. The diameter of a binary tree is the length of the longest path between
@@ -25,19 +79,3 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-class Solution(object):
-    def diameterOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        self.ans = 0
-
-        def depth(p):
-            if not p: return 0
-            left, right = depth(p.left), depth(p.right)
-            self.ans = max(self.ans, left+right)
-            return 1 + max(left, right)
-
-        depth(root)
-        return self.ans

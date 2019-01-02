@@ -1,0 +1,6 @@
+-- https://leetcode.com/contest/weekly-contest-116/problems/n-repeated-element-in-size-2n-array/
+  Hint -1. How to arrange n items in the n-1 holes? Use of pigenhole principle
+       -2. Thinking in terms of arranging the elements in the circular array
+          https://leetcode.com/problems/n-repeated-element-in-size-2n-array/discuss/208333/Circular-array-O(n)-time-and-O(1)-Space
+
+

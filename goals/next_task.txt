@@ -1,0 +1,51 @@
+2d replace with dict + REgex + wildcard
+python lec + yield
+Number of Matching Subsequences - LeetCode
+https://doc.lagout.org/programmation/python/Data%2…
+segment tree + read top coder
+https://apps.topcoder.com/wiki/display/tc/Algorith…
+TopCoder Statistics - Problem Statement
+https://leetcode.com/submissions/detail/155424673/
+read concurrecy
+react create task + monitor + publish list google sheet
+gouthampradhan/leetcode
+Prog pearls overview
+http://www.cs.bu.edu/~jappavoo/jappavoo.github.com…
+operational google doc changs
+regex calculator + graph
+shunt algo
+Median of Two Sorted Arrays - LeetCode
+system design + routing + 1 word ds ans + cache + editor
+Return the smallest rectangle - GeeksforGeeks Q&A
+Karass negotiation semunar
+ankitools streamline + images + notes
+revise anki
+Kahn algo detect cycle
+https://engineering.paypalcorp.com/confluence/disp…
+resume
+revise problems
+Revise distributed system consistent hashing
+n-queen
+dice
+combination sum
+dp-troy
+usoft send app
+1 design - grokking
+Explore https://interviewcamp.io
+pivot computing + vdo
+generators
+max rectangle sum
+clean up task
+burst ballon
+Go over interviewbit solution
+calculator + revise cleanup
+search
+recursion (nqueen)
+Add valid + invalid data for tests + merchantmonetarytxn data generator
+graph
+DP
+dandc
+Look https://github.com/seletskiy/dotfiles
+https://leetcode.com/problems/binary-tree-longest-… + BFS + DFS
+get next problem list
+fix cmps review

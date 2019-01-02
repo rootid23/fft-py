@@ -1,0 +1,14 @@
+
+-- https://leetcode.com/problems/find-anagram-mappings/solution/
+  Hint - hashing, auxillary hash map
+
+-- https://leetcode.com/problems/unique-email-addresses
+  Hint - auxillary hash set, string manipulation
+
+-- https://leetcode.com/problems/to-lower-case/
+  Hint - use of ord and ranking ccpt
+
+-- https://leetcode.com/problems/unique-morse-code-words/
+  Hint - use of ord and ranking ccpt
+
+-- https://leetcode.com/problems/robot-return-to-origin/

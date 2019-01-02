@@ -1,0 +1,13 @@
+
+
+
+
+-- Shunting yard algo (Infix to postfix) 3 railway road junction (stack + q)
+https://en.wikipedia.org/wiki/Shunting-yard_algorithm
+https://github.com/raywenderlich/swift-algorithm-club/tree/master/Shunting%20Yard
+https://brilliant.org/wiki/shunting-yard-algorithm/ (Skips associvity)
+http://rosettacode.org/wiki/Parsing/Shunting-yard_algorithm
+Hint - 3 railway road junction
+If the operator's precedence is less than that of the operators at the top of the stack or the
+precedences are equal and the operator is left associative,
+then that operator is popped off the stack and added to the output g)

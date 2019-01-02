@@ -1,0 +1,3 @@
+-- https://leetcode.com/problems/di-string-match/
+  Hint - How to choose element to insert or greedy
+

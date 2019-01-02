@@ -1,0 +1,46 @@
+--
+-- https://leetcode.com/problems/largest-rectangle-in-histogram
+
+-- https://leetcode.com/problems/maximal-square/
+https://leetcode.com/problems/maximal-square/discuss/61805/Evolve-from-brute-force-to-dp
+
+-- https://leetcode.com/problems/maximal-rectangle/
+(2d largest historgram) Visualize
+https://leetcode.com/problems/maximal-rectangle/discuss/29054/Share-my-DP-solution
+
+-- https://leetcode.com/problems/longest-increasing-subsequence/
+What makes sequence inceasing subseuqnce (previous elements)
+https://leetcode.com/problems/longest-increasing-subsequence/solution/ (LIS, DP)
+Go over O(n log n) solution
+
+-- https://leetcode.com/problems/sort-colors/
+Partition w/ 3 elements > mid, < mid
+https://en.wikipedia.org/wiki/Dutch_national_flag_problem
+
+-- https://leetcode.com/problems/generalized-abbreviation/ (backtracking)
+Hint - Abbrevate/ do not abbrevate - O(n2^n)
+Build decision tree
+
+-- https://leetcode.com/problems/sliding-window-maximum/
+Hint - deque - working with indices much easier than value
+
+-- https://leetcode.com/problems/basic-calculator/
+  How to  5 + ((6)), 5 + (-1) (Negative numbers and multiple parentheis for same digit
+https://leetcode.com/problems/basic-calculator/discuss/62361/Iterative-Java-solution-with-stackA
+https://leetcode.com/problems/basic-calculator/discuss/62344/Easy-18-lines-C%2B%2B-16-lines-Python
+
+-- https://leetcode.com/problems/basic-calculator-2/
+https://leetcode.com/problems/basic-calculator-ii/discuss/63004/17-lines-C%2B%2B-easy-20-ms
+
+-- https://leetcode.com/problems/next-greater-element-i/
+  Hint : stack to get the next greater, when to push and pop
+
+-- https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii
+  Hint - Bottom up/post order solution, visualize at each node count inc + dec (eg. 1,2,3)
+
+-- https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
+  Hint - Bottom up/post order solution
+
+https://leetcode.com/problems/flipping-an-image/
+
+https://leetcode.com/problems/hamming-distance/
