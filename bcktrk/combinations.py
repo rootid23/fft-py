@@ -11,6 +11,52 @@
 #]
 
 
+#Check pruning
+
+#[] | start = 1
+#  [1] | start = 2
+#    [1, 2] | start = 3
+#    [1, 3] | start = 4
+#    [1, 4] | start = 5
+#  [2] | start = 3
+#    [2, 3] | start = 4
+#    [2, 4] | start = 5
+#  [3] | start = 4
+#    [3, 4] | start = 5
+class Solution(object):
+    def combine(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: List[List[int]]
+        """
+        #select 2 items from 1-4
+        #[1,2,3,4] -> [1,2] [1,3] [1,4] [2,3] [2,4] [3,4]
+        #n c K
+        def csHelper(n, start, k, sel, ws = '\t') :
+            print(ws + str(sel) + " | start = " +  str(start))
+            rst = []
+            #print(k, start)
+            if(len(sel) == k) :
+                rst += [ sel[:] ]
+                return rst
+            if(len(sel) > k) : return rst
+            for idx in range(start, n) :
+                remain = n - idx
+                if(len(sel) + remain < k) : break # Pruning when we can't form elements
+                sel += [ idx ]
+                rst += csHelper(n, idx+1, k, sel, ws + '\t')
+                sel.pop() #unchoose the decision  why [2,2]?
+
+            return rst
+        #
+        return csHelper(n+1, 1, k, [])
+
+
+
+
+
+
 # Iterative
 def combine(self, n, k):
   ans = []

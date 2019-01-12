@@ -15,7 +15,7 @@ class Solution(object):
   def moveZeroes(self, nums):
     strt = 0
     for i in range(len(nums)):
-      if (nums[i] != 0):
+      if (nums[i] != 0): #It moves all zeros to end and reverse condition move them to front
         nums[i], nums[strt] = nums[strt], nums[i]
         strt += 1
 

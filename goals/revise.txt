@@ -41,6 +41,12 @@ https://leetcode.com/problems/basic-calculator-ii/discuss/63004/17-lines-C%2B%2B
 -- https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
   Hint - Bottom up/post order solution
 
-https://leetcode.com/problems/flipping-an-image/
+-- https://leetcode.com/problems/flipping-an-image/
+  Hint - 2-d array traversal
 
-https://leetcode.com/problems/hamming-distance/
+-- https://leetcode.com/problems/hamming-distance/
+  Hint - Bit hacks, default operations
+
+-- Binary search
+  https://leetcode.com/problems/peak-index-in-a-mountain-array/submissions/
+https://leetcode.com/problems/array-partition-i/solution/

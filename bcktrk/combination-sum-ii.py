@@ -20,6 +20,25 @@
 #  [5]
 #]
 
+
+#[] | start = 0
+#  [1] | start = 1
+#    [1, 1] | start = 2
+#      [1, 1, 2] | start = 3
+#      [1, 1, 5] | start = 4
+#      [1, 1, 6] | start = 5
+#    [1, 2] | start = 3
+#      [1, 2, 5] | start = 4
+#    [1, 5] | start = 4
+#    [1, 6] | start = 5
+#    [1, 7] | start = 6
+#  [2] | start = 3
+#    [2, 5] | start = 4
+#    [2, 6] | start = 5
+#  [5] | start = 4
+#  [6] | start = 5
+#  [7] | start = 6
+
 class Solution(object):
     def combinationSum2(self, candidates, target):
         """
@@ -43,3 +62,4 @@ class Solution(object):
         #repeat the elment
         candidates.sort()
         return csHelper(candidates, [] , target)
+

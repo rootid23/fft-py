@@ -12,3 +12,10 @@
   Hint - use of ord and ranking ccpt
 
 -- https://leetcode.com/problems/robot-return-to-origin/
+
+-- https://leetcode.com/problems/univalued-binary-tree/
+  Hint - top-down traversal
+
+-- https://leetcode.com/problems/n-repeated-element-in-size-2n-array/submissions/
+  Hint - Pigenhole principle
+

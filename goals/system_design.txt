@@ -12,6 +12,7 @@ Designing Facebook’s Newsfeed
 Designing Yelp or Nearby Friends
 Designing Uber backend
 Design Ticketmaster
+Designing Google Docs, https://www.youtube.com/watch?v=mDYuJoQEowQ
 
 Glossary of System Design Basics
 System Design Basics

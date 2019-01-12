@@ -25,7 +25,7 @@ class Solution(object):
         rst.append(list(choosen))
       else:
         for i in range(len(avail)):
-          if (i + 1 < len(avail) and avail[i + 1] == avail[i]):
+          if (i + 1 < len(avail) and avail[i + 1] == avail[i]): #pruning  What you selected?
             continue
           choosen.append(avail[i])  # Choose
           permuteUniqHelper(avail[0:i] + avail[i + 1:], choosen)  #Xplore

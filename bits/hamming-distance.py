@@ -29,3 +29,25 @@ def hamming_distance(x, y):
         d += xor & 1
         xor >>= 1
     return d
+
+#Can't handle negative numbers
+#negative number throws the computer into an infinite loop
+def hamming_distance(x, y):
+  diff = x ^ y
+  cnt = 0
+  while(diff) :
+      diff &= diff - 1 #clear the least significant bit set
+      cnt += 1
+  return cnt
+
+#To overcome the limitation of negative numbers
+def hamming_distance(x, y):
+        diff = x ^ y
+        cnt = 0
+        for _ in range(32) :
+            if(diff == 0) : break
+            diff &= diff - 1 #clear the least significant bit set
+            cnt += 1
+        return cnt
+
+        return bin(x^y).count('1') # bin operation

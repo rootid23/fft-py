@@ -12,6 +12,7 @@
 #  [3,2,1]
 #]
 #
+#
 class Solution:
   """
     @param: nums: A list of integers.
@@ -40,7 +41,48 @@ class Solution:
     permuteHelper(nums, [])
     return rst
 
+#
+class Solution(object):
+    def permute(self, nums):
 
+        rst , sel = [], []
+        def permuteHelper(sel, nums, rst) :
+            if(not nums) :
+                rst += [ sel [:] ]
+                return
+            for i in range(len(nums)) :
+                val = nums[i]
+                sel += [ val ]
+                nums = nums[:i] + nums[i+1:]
+                permuteHelper(sel, nums, rst)
+                sel.pop()
+                nums.insert(i,val)
+
+
+        permuteHelper(sel, nums, rst)
+        return rst
+#
+class Solution(object):
+    def permute(self, nums):
+
+        rst , sel = [], []
+        def permuteHelper(sel, nums) :
+            if(not nums) :
+                rst.append(sel [:])
+                return rst
+            for i in range(len(nums)) :
+                val = nums[i]
+                sel += [ val ]
+                nums = nums[:i] + nums[i+1:]
+                permuteHelper(sel, nums)
+                sel.pop()
+                nums.insert(i,val)
+            return rst
+
+
+        return permuteHelper(sel, nums)
+
+#
 class Solution(object):
 
   def permute(self, nums):
@@ -59,8 +101,7 @@ class Solution(object):
       self.permuteHelper(nxtAvail, choosen, rst)
       choosen.pop()
 
-
-
+#
 class Solution(object):
     def permute(self, nums):
         """

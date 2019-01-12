@@ -11,6 +11,51 @@
 #]
 
 
+
+#[] | start = 0
+#	[2] | start = 0
+#		[2, 2] | start = 0
+#			[2, 2, 2] | start = 0
+#			[2, 2, 3] | start = 1
+#		[2, 3] | start = 1
+#	[3] | start = 1
+#		[3, 3] | start = 1
+#	[6] | start = 2
+#	[7] | start = 3
+
+
+def combinationSum(self, candidates, target):
+        candidates.sort()
+
+        def csHelper(start, candidates, sel, target, ws = '\t') :
+            print(ws + str(sel) + " | start = " +  str(start))
+            rst = []
+            if(start < len(candidates)) :
+                if(target == 0) :
+                    rst += [ sel [:] ]
+                for idx in range(start, len(candidates)) :
+                    if(target >= candidates[idx]) :  #Explore only possible elements
+                        sel += [ candidates[idx] ]
+                        rst += csHelper(idx, candidates, sel, target - candidates[idx], ws + '\t')
+                        sel.pop() #Undo the decision
+                return rst
+
+
+                # if(candidates[start] <= target) :
+                #     sel += [ candidates[start] ]
+                #     #Select element
+                #     rst += csHelper(start, candidates, sel, target - candidates[start])
+                #     sel.pop()
+                #     #discard the lement
+                #     rst += csHelper(start+1, candidates, sel, target)
+
+
+            return rst
+
+
+        return csHelper(0, candidates, [] , target)
+
+
 class Solution(object):
 
   def combinationSum(self, cands, target):
