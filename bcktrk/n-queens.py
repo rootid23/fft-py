@@ -1,10 +1,6 @@
 
 class Solution(object):
     def solveNQueens(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
         q = [ ['.'] * n ]
         for _ in range(1, n) :
             q += [ ['.'] * n ]

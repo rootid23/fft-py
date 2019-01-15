@@ -21,6 +21,71 @@
 #         self.left = None
 #         self.right = None
 
+
+# W/ path to node (Store all nodes upto the root)
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        def path_to_node(root, t) :
+
+            if(not root) : return root
+            if(root == t) :
+                return [ root ]
+            lt = path_to_node(root.left, t)
+            rt = path_to_node(root.right ,t)
+            if(lt) :
+                lt += [ root ]
+                return lt
+            if(rt) :
+                rt += [ root ]
+                return rt
+            return None
+
+        ps = path_to_node(root,p)
+        qs = path_to_node(root,q)
+        lca = None
+        while(ps and qs) :
+            t = ps.pop()
+            t1 = qs.pop()
+            print(t.val ,t1.val)
+            if(t == t1) :
+                lca = t
+
+        return lca
+
+
+#W/ Status recursive (Propogate the value of count to parent)
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+
+        def lcHelper(root, p, q, ws = '\t') :
+
+            if(not root) :
+                return [root, 0]
+
+            last_lt = lcHelper(root.left, p, q, ws + '\t')
+
+            #Both nodes anre in left subtree
+            if(last_lt[1] == 2) :
+                return last_lt
+
+            #Both nodes are in the right substree
+            last_rt = lcHelper(root.right, p, q, ws + '\t')
+            if(last_rt[1] == 2) :
+                return last_rt
+
+            print( ws + str(last_rt) + ws + str(last_lt) )
+
+            if(root == p or root == q) :
+                return [root, last_lt[1] + last_rt[1] + 1, root.val]
+
+            return [root, last_lt[1] + last_rt[1] , root.val]
+
+
+        return lcHelper(root, p, q)[0]
+
+
+
+
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
         if not root :
