@@ -16,6 +16,28 @@
 #   [5,4,11,2],
 #   [5,8,4,5]
 #]
+
+
+class Solution(object):
+    def pathSum(self, root, sum):
+        def pshelp(root, sum_, lst) :
+            rst = []
+
+            if(root and not root.left and not root.right and sum_ == root.val) :
+                lst += [ root.val ]
+                rst += [ lst[:] ]
+                lst.pop()
+                return rst
+            if(root) :
+
+                rst += pshelp(root.left, sum_ - root.val, lst + [root.val])
+                rst += pshelp(root.right, sum_ - root.val, lst + [root.val])
+
+            return rst
+
+
+        return pshelp(root, sum, [])
+
 #
 def pathSum2(self, root, sum):
     if not root:
