@@ -11,9 +11,9 @@
 def findKthLargest(self, nums, k):
   pos = self.partition(nums, 0, len(nums) - 1)
   if pos > len(nums) - k:
-    return self.findKthLargest(nums[:pos], k - (len(nums) - pos))
+    return self.findKthLargest(nums[:pos], k - (len(nums) - pos)) #Include upto [0:pos)
   elif pos < len(nums) - k:
-    return self.findKthLargest(nums[pos + 1:], k)
+    return self.findKthLargest(nums[pos + 1:], k) #Include upto (pos+1:end]
   else:
     return nums[pos]
 
