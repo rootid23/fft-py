@@ -1,0 +1,52 @@
+
+The first round of interviews, 45min phone interview. The first question: [hide=130] to determine
+whether string A is the subsequence of string B[/hide] second question: [hide=130]add parentheses to
+make the string valid, the opposite of FB that high frequency hard, this The question is to add the
+least brackets [/hide] after about 25 minutes left, and asked the web...
+
+
+
+The company that made the pokemon made a question, gave a bunch of flight start and end points,
+and then gave a starting point and an end point, asking if there is a path to the end. Just do it
+with bfs, dfs is easy for me to make mistakes, use an unordered_map to ensure that there is no
+cycle, the interviewer agrees to the algorithm, it is recommended to save space with unorder_set.
+Then asked about the complexity of the time space, which is linear O(V+E). Then I asked why I chose
+their company and did not play any games. I didn't play much, and I said two. The other party said
+that they hope that employees are at least interested in the game, otherwise they will not be
+enthusiastic about development. Let me introduce what I am doing now, and ask in detail. After that,
+I asked. Originally 30 minutes, because I asked...
+
+
+Give a matrix of letters, ask for a path from one letter to another, feel the ASCII basis, explain
+the mapping relationship and corner... What game have you played? Do not. I didn't play much, and I
+said two. The other party said that they hope that employees are at least interested in the game,
+otherwise they will not be enthusiastic about development. Let me introduce what I am doing now, and
+ask in detail. After that, I asked. Originally 30 minutes, because I asked...
+
+
+ 2. anagram[/hide] site: [hide=200] two rounds: 1. meeting room 2 variant, give one Series
+[entertime, exittime], which time period is the most;
+
+longest path from the root to the leaf node of the binary tree, follow up 1: can not contain the
+leaf node, find the longest path follow up...
+
+
+Find the duplicate number in a collection Of numbers, there is only one pair of duplicate number,
+the rest are unique numbers, how do you find the duplicate number? What's the running time and
+memory used in your solution? Follow up1: If we stored the numbers in array, could...
+
+
+gives a string of parentheses such as '(()())((()' in parentheses to make it parental." ()())
+'Explanation: We added '(' to the beginning and '))' to the end a total of ten test cases wrong will
+display input help debug
+
+
+[hide=100]Given a stream of integers and a window size, calculate the moving average of all integers
+in the sliding window.follow upmin/max of that sliding window[/hide]
+
+
+1) Write a function and check if the 2 intervals are overlap2) LRU cache3)
+
+
+1）What's the difference between symmetric and asymmetric key encryption? （2）Why are you
+interested in Niantic?（

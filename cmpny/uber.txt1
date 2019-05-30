@@ -1,0 +1,24 @@
+#2 coding problems, 1 system design question, 2 behavioral}
+
+Design a search engine
+
+Write a program to find the longest path in a 2D array, given that you can move from point A to
+point B if and only if A<=B and A, B are adjacent and share the same row or column. The allowed time
+was about 20 to 30 min.
+
+
+flip the pancake(old algorithm question), system design (self-driving, report error, how to
+process), change two strings are 1 edit distance away (add a char, remove a char), behavior
+(leadership, preferred team)
+
+Given a 2D grid, find the length of the longest connected component.
+
+Implement a logger
+Coding questions related to two points on a 2D grid
+Twitter design
+
+
+Tell me about...(1) a time when things went well , (2) things wen't bad, (3) there was a
+conflict and (4) why Uber?
+
+

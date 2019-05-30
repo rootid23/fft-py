@@ -42,39 +42,6 @@
 #  K1     K2     K3
 #
 
-# Whenever element is accessed get/set -> it must be moved to last/first
-#Get -> Adjust/Move/Set to Last
-#Put -> Check capacity if > : remove first  -> Adjust/Put/set to Last
-#ordered dict
-#--(Add) (Remove)--
-#Add @head and Remove @tail
-class LRUCache:
-  from collections import OrderedDict
-  def __init__(self, capacity):
-      self.dic = OrderedDict()
-      self.remain = capacity
-
-  def get(self, key):
-      if key not in self.dic:
-          return -1
-      #Adjust position
-      v = self.dic.pop(key) #Remove the key from dictionary
-      self.dic[key] = v   # set key as the newest one
-      return v
-
-  def put(self, key, value):
-      #If already exists remove
-      if key in self.dic:
-          self.dic.pop(key)
-      else:
-          #update the capacity
-          if self.remain > 0:
-              self.remain -= 1
-          else:  # self.dic is full
-              #Remove the first item
-              self.dic.popitem(last=False)
-      #Adjust the value
-      self.dic[key] = value
 
 # W/DLL - > (Key, Val) -> head,tail -> insert/delete
 #Map -> (Key, DLLNODE)
@@ -125,6 +92,40 @@ class LRUCache:
       self.tail.prev = node
       node.prev = p
       node.next = self.tail
+
+# Whenever element is accessed get/set -> it must be moved to last/first
+#Get -> Adjust/Move/Set to Last
+#Put -> Check capacity if > : remove first  -> Adjust/Put/set to Last
+#ordered dict
+#--(Add) (Remove)--
+#Add @head and Remove @tail
+class LRUCache:
+  from collections import OrderedDict
+  def __init__(self, capacity):
+      self.dic = OrderedDict()
+      self.remain = capacity
+
+  def get(self, key):
+      if key not in self.dic:
+          return -1
+      #Adjust position
+      v = self.dic.pop(key) #Remove the key from dictionary
+      self.dic[key] = v   # set key as the newest one
+      return v
+
+  def put(self, key, value):
+      #If already exists remove
+      if key in self.dic:
+          self.dic.pop(key)
+      else:
+          #update the capacity
+          if self.remain > 0:
+              self.remain -= 1
+          else:  # self.dic is full
+              #Remove the first item
+              self.dic.popitem(last=False)
+      #Adjust the value
+      self.dic[key] = value
 
 # W/ DLL
 class LRUCache(object):

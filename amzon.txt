@@ -1,0 +1,11 @@
+The first round of the given an integer array, find the longest length of array which sums up to 0.
+Followup is to give a matrix, which has 0,1, and find the longest 1 from any point
+
+
+Find substrings with k distinct letters. Attention: length of substring has to be k as well.
+K closest points to origin.
+
+
+give a string, and a positive integer k, to return a list containing all the substrings in the
+string containing k non-repeating letters and also length k. For example: string="abcba", k=3, the
+answer is ['abc', 'cba']

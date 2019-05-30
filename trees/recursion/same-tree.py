@@ -20,7 +20,6 @@
 #         2   1     1   2
 #        [1,2,1],   [1,1,2]
 #Output: false
-#
 class Solution(object):
     def isSameTree(self, p, q):
         #struct and values must be same

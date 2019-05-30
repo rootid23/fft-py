@@ -1,0 +1,122 @@
+
+
+The first question is to give a class with a method that calculates the highest and lowest
+difference in the stock.
+
+1. remove node in linked list. Find bugs
+I found that the list will only report an error when there is only one node.
+There is prev, current assignment order is wrong
+
+2. similar to sort color, eac
+
+
+22231:
+Initially 3 2 read 32
+After 1 3 reads 13
+1 1 read 11
+Result = 321311
+
+2. Give a coordinate point a reference, and give a group of coordinate points to find the K points
+closest to the reference point. Ask to write time complexity.
+3. Flip a matrix, flipped from the upper left to the lower right diagonal. Ask to write time
+complexity.
+a binary tree, find the two identical child nodes inside?
+
+ probably passing an unsigned x, and then the function of the function implementation is descending.
+I forgot the specifics but I remember seeing them in a certain face.
+Single Number is exactly the same as the Single Number of leetcode. It is good to change to String
+to find Character.
+. Friend Circle's correction question
+Count and
+
+debug problem probably mystery function to determine what is doing is actually looking for a b is
+not direct / indirect friend to give dfs bug is no visi
+
+1. deep copy node,
+2. MusicA
+
+
+https://instant.1point3acres.com/tag/microsoft
+
+1) delete N-1th from a single linkedlist
+2) check if Binary tree is a Binary Search Tree
+3) Implement Queue methods using LinkedList;
+Enqueue, dequeue and a constructor
+
+
+1) Q:what does the mystery function do? what are some possible bugs? How woiuld you fix them?
+A: The function checks to see if a friend is in your list of friends, if not, in your friends list
+of friends, and so on. One bug was circular paths in the graph that is created from all the friends.
+I said the function should keep track of which friends have been visited.
+
+2) Q: You are given an array of N ints containing 1 - N + 1 numbers. Find the missing number.
+A: I said to keep a boolean array that is set to true for every number in the list. Then find the
+one that is false.
+
+3) Q: you are given the root node of a binary search tree and an int target. find the next largest
+number in the tree.
+A: I said to do an in-order traversal of the tree until the target is found, we can then return the
+next node visited
+
+
+
+1. The java script version of the sale and purchase of the code
+Ask these codes are dry
+The bug is 啥, how to improve
+Give test case
+How to return max profit if given a new price
+
+2. Medicine for a long time
+
+3. Give two time points (hours, minutes and seconds), t1 in front of t2, and let the code output
+output a few hours and minutes. For example, 23:59:59 0:0:0 output 0:0:1; 1:0:0 2:0:0 output 1:0:0
+Restriction cannot use if statement
+
+
+100 million wines. For two times t1, t2 are represented by the integer variables of h, m, s
+
+1.debug problem, there is a Function dedicated build synonyms table, in fact, is a 2d int array,
+then ask you time space complexity, and finally ask you how scalable. 2. The original problem
+of 100 million wines. For two times t1, t2 are represented by the integer variables of h, m, s,
+respectively...
+
+
+1. divide operation implementation, can only use addition and subtraction, this question is long
+2. debug, is the face of the problem, there is a count-- before the lock, but I am not prepared,
+because too Long time 3. bst find the target value, if not, it will return to the target one lost,
+
+
+Give a binary tree a nominal expression and ask for print out postfix notation (post order
+traversal?)3. Give a paragraph of pseudo code: content: insert number to two queues, one is odd
+number queue, one is even number queue, there is a global variable of total count, code is very
+simple if you take a number, if it is a singular addition Odd queue double number added to even...
+
+
+
+1.Introduce myself
+
+2.why software engineer?
+
+3.Why Microsoft?
+
+4.What's is the most technically difficult project?
+
+5.What challenges did you have in your xxx project?
+
+Why programing language?
+
+Algorithm:
+
+Takeaway：
+
+difficulty：
+
+6.What about conflicts?
+
+7.What's your favorite Microsoft product?
+
+8.How do you want to improve it?
+
+9.Explain recursion to a five-year-old kid
+
+10.How do you learn new technologies

@@ -4,6 +4,66 @@
 #Note:
 #You may assume that all inputs are consist of lowercase letters a-z.
 
+#Trie - w/ only array of size 26
+class Trie(object):
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        #apple,
+        #predix
+        #input size?
+        #input spec?
+        # ( [visited char, leaf], children )
+        self.root = [ [-1,-1], [None] * 26 ]
+
+    def insert(self, word):
+        """
+        Inserts a word into the trie.
+        :type word: str
+        :rtype: void
+        """
+        tmpRoot  = self.root
+        for c in word :
+            idx = ord(c) - ord('a')
+            #init
+            if(tmpRoot[1][idx] == None) :
+                tmpRoot[1][idx] = [ [-1,0], [None] * 26 ]
+            #progress
+            tmpRoot = tmpRoot[1][idx]
+            #set
+            if(tmpRoot[0][0] == -1) :
+                tmpRoot[0][0] = 1
+        tmpRoot[0][1] = -1
+
+    def __find(self, word) :
+        tmpRoot  = self.root
+        for c in word :
+            idx = ord(c) - ord('a')
+            if(tmpRoot[1][idx] == None) : return None
+            tmpRoot = tmpRoot[1][idx]
+        return tmpRoot
+
+    def search(self, word):
+        """
+        Returns if the word is in the trie.
+        :type word: str
+        :rtype: bool
+        """
+        tmpRoot = self.__find(word)
+        if(tmpRoot == None) : return False
+        return tmpRoot[0][1] == -1
+
+    def startsWith(self, prefix):
+        """
+        Returns if there is any word in the trie that starts with the given prefix.
+        :type prefix: str
+        :rtype: bool
+        """
+        tmpRoot = self.__find(prefix)
+        if(tmpRoot == None) : return False
+        return True
 
 # W/ child as a array
 class TrieNode(object):
@@ -13,23 +73,12 @@ class TrieNode(object):
     self.chlds = None
     self.isLeaf = False
 
-
 class Trie(object):
 
-  root = None
-
   def __init__(self):
-    """
-        Initialize your data structure here.
-        """
     self.root = TrieNode('')
 
   def insert(self, word):
-    """
-        Inserts a word into the trie.
-        :type word: str
-        :rtype: void
-        """
     dmyNode = self.root
     for t in word:
       rnk = ord(t) - ord('a')
@@ -41,11 +90,6 @@ class Trie(object):
     dmyNode.isLeaf = True
 
   def search(self, word):
-    """
-        Returns if the word is in the trie.
-        :type word: str
-        :rtype: bool
-        """
     dmyNode = self.root
     for t in word:
       rnk = ord(t) - ord('a')
@@ -55,11 +99,6 @@ class Trie(object):
     return dmyNode.isLeaf == True
 
   def startsWith(self, prefix):
-    """
-        Returns if there is any word in the trie that starts with the given prefix.
-        :type prefix: str
-        :rtype: bool
-        """
     dmyNode = self.root
     for t in prefix:
       rnk = ord(t) - ord('a')
@@ -68,7 +107,6 @@ class Trie(object):
       dmyNode = dmyNode.chlds[rnk]
     return True
 
-
 ## Python W/ childs as dictionary
 class TrieNode:
   # Initialize your data structure here.
@@ -76,15 +114,11 @@ class TrieNode:
     self.word = False
     self.children = {}
 
-
 class Trie:
 
   def __init__(self):
     self.root = TrieNode()
 
-  # @param {string} word
-  # @return {void}
-  # Inserts a word into the trie.
   def insert(self, word):
     node = self.root
     for i in word:
@@ -93,9 +127,6 @@ class Trie:
       node = node.children[i]
     node.word = True
 
-  # @param {string} word
-  # @return {boolean}
-  # Returns if the word is in the trie.
   def search(self, word):
     node = self.root
     for i in word:
@@ -104,10 +135,6 @@ class Trie:
       node = node.children[i]
     return node.word
 
-  # @param {string} prefix
-  # @return {boolean}
-  # Returns if there is any word in the trie
-  # that starts with the given prefix.
   def startsWith(self, prefix):
     node = self.root
     for i in prefix:
@@ -115,7 +142,6 @@ class Trie:
         return False
       node = node.children[i]
     return True
-
 
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()

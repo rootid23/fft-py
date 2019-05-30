@@ -18,9 +18,10 @@ len() - len('abcde')
   - cntr = collections.Counter(obj)
   - sum(cntr.values())
 
-## import re
-  - use of r - Do not
-  -  Diff between match (only check the matching from start)  and search (search in all string)
+##
+  import re
+  - Use of r - Do not
+  - Diff between match (only check the matching from start) and search (search in all string)
   - re.match(pat, text) -
   - re.sub(pattern, repl, str) -
     eg. re.sub(r'[A-Z]', '', 'AbcedEfrt') - Replace all capital letters with ''
@@ -90,7 +91,7 @@ pprint.print()
 # Skip (key not dict_type) check
 collections.defaultdict(list) vs {}
 
-## file I/O and handle exception w/ try , except
+## File I/O and handle exception w/ try , except
   - open(), fd.close(),
   - readline() vs read()
 

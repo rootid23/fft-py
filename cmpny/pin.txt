@@ -1,0 +1,7 @@
+ matrix consisting of 0,1. Find a rectangular position that is all 0, and ensure that only one such
+rectangle exists. 2. The above question surface is changed to have multiple rectangles present,
+output all results 3. Or find 0 in 1 and do not
+
+https://leetcode.com/problems/perfect-number/description/
+https://leetcode.com/problems/lru-cache/description
+

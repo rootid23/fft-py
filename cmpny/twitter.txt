@@ -1,0 +1,46 @@
+
+	20
+Valid Parentheses
+	35.8%	Easy
+	269
+Alien Dictionary
+	29.8%	Hard
+	295
+Find Median from Data Stream
+	34.5%	Hard
+	42
+Trapping Rain Water
+	41.6%	Hard
+	57
+Insert Interval
+	30.6%	Hard
+	635
+Design Log Storage System
+	52.7%	Medium
+	91
+Decode Ways
+	21.8%	Medium
+	56
+Merge Intervals
+	34.6%	Medium
+	208
+Implement Trie (Prefix Tree)
+	36.5%	Medium
+	706
+Design HashMap
+	53.8%	Easy
+	169
+Majority Element
+	51.3%	Easy
+	200
+Number of Islands
+	40.0%	Medium
+	346
+Moving Average from Data Stream
+	64.8%	Easy
+	767
+Reorganize String
+	40.9%	Medium
+	814
+Binary Tree Pruning
+	69.8%	Medium
