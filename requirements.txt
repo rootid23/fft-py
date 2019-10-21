@@ -6,7 +6,7 @@ click==6.7
 dnet==1.12
 funcsigs==1.0.2
 hashpumpy==1.2
-httpie==0.9.9
+httpie==1.0.3
 idna==2.6
 pluggy==0.6.0
 py==1.5.2
